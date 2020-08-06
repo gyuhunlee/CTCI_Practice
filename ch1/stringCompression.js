@@ -30,8 +30,9 @@ function stringCompression(str) {
   }
 
   // return the answer variable IF the length is less than the original string
-  return str.length === answer.length ? str : answer;
+  return str.length > answer.length ? answer : str;
 };
 
-console.log(stringCompression('acccbbzzzt')) // acccbbzzzt    NOT a1c3b2z3t1
+console.log(stringCompression('acccbbzzzt'))   // acccbbzzzt    NOT a1c3b2z3t1
 console.log(stringCompression('aaattttBBBsB')) // a3t4B3s1B1
+console.log(stringCompression('acccbbzzzz'))   // a1c3b2z4
