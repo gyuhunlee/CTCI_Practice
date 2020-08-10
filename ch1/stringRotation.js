@@ -30,7 +30,23 @@ function isSubstring(str1, str2) {
   return false;
 }
 
-console.log(isSubstring("waterbottle", "erbottlewat"));
-console.log(isSubstring("ete", "tee"));
-console.log(isSubstring("acac", "caca"));
-console.log(isSubstring("cactus", "totoros"));
+// console.log(isSubstring("waterbottle", "erbottlewat"));
+// console.log(isSubstring("ete", "tee"));
+// console.log(isSubstring("acac", "caca"));
+// console.log(isSubstring("cactus", "totoros"));
+
+
+
+function isSubstring2(str1, str2) {
+  // return false if str1 length is not equal to str2
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+  return (str2 + str2).includes(str1);
+}
+
+// console.log(isSubstring2("waterbottle", "erbottlewat"));
+// console.log(isSubstring2("ete", "tee"));
+// console.log(isSubstring2("acac", "caca"));
+// console.log(isSubstring2("cactus", "totoros"));
