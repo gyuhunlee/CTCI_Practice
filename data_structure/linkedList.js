@@ -1,11 +1,11 @@
-class Node = {
+class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
   }
 }
 
-class LinkedList = {
+class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -58,7 +58,9 @@ class LinkedList = {
     return oldTail;
   }
 
-  head() {
+  checkHead() {
     return this.head;
   }
 }
+
+module.exports = LinkedList;
